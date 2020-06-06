@@ -26,7 +26,3 @@
 - [ ] My code follows the code style of this project.
 - [ ] My change requires a change to the documentation.
 - [ ] I have updated the documentation accordingly.
-
-**Closing issues**
-
-Put `closes #XXXX` in your comment to auto-close the issue that your PR fixes (if such).
