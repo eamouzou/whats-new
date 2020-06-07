@@ -6,7 +6,7 @@ function Menu(props){
   return(
     <navbar>
       <ul>
-      {props.news.map(category => <button>{category}</button>)}
+      {props.news.map(category => <button id={category} onClick={props.changeCategory}>{category}</button>)}
       </ul>
     </navbar>
   )
