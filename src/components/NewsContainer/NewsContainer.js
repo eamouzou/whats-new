@@ -1,13 +1,12 @@
 import React from 'react';
 import './NewsContainer.css'
-import local from '../../data/local.js'
-import NewsArticle from '../NewsArticle/NewsArticle.js'
+import NewsArticle from '../NewsArticle/NewsArticle'
 
 // NEWSCONTAINER COMPONENT CODE GOES HERE
-const NewsContainer = () => {
+const NewsContainer = (props) => {
   return (
     <div>
-      {local.map(article => <NewsArticle info={article} />)}
+      {props.display.map(article => <NewsArticle info={article} />)}
     </div>
   )
 }
