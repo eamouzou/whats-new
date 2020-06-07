@@ -18,11 +18,16 @@ class App extends Component {
     }
   }
 
+  changeCategory = (event) => {
+    // console.log(typeof event.target.id.toLowerCase())
+    this.setState({chosenNews: this.state.newsData[event.target.id.toLowerCase()]})
+  }
+
   render () {
-    debugger
+    // console.log(this.state.chosenNews)
     return (
       <div className="app">
-        <Menu news={this.state.newsCategory} />
+        <Menu news={this.state.newsCategory} changeCategory={this.changeCategory}/>
         <NewsContainer display={this.state.chosenNews} />
       </div>
     );
